@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tev_back"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tev_wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35℃"
+        android:textColor="@color/colorMain"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/wd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+    <com.example.mango.Countdownview
+        android:id="@+id/countdownview"
+        android:layout_width="250dp"
+        android:layout_height="125dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/tev_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100%"
+        android:textColor="@color/colorMain"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_battery_full_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <com.example.mango.Menuview
+        android:id="@+id/menuview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="@+id/countdownview"
+        app:layout_constraintStart_toStartOf="@+id/countdownview"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bgv"
+        app:layout_constraintBottom_toBottomOf="@+id/tev_m1_power"
+        app:layout_constraintEnd_toEndOf="@+id/tev_m1_power"
+        app:layout_constraintStart_toStartOf="@+id/tev_m1_power"
+        app:layout_constraintTop_toTopOf="@+id/tev_m1_power" />
+
+    <TextView
+        android:id="@+id/tev_m1_power"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_power_settings_new_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuview"
+        app:layout_constraintEnd_toEndOf="@+id/menuview"
+        app:layout_constraintStart_toStartOf="@+id/menuview"
+        app:layout_constraintTop_toTopOf="@+id/menuview" />
+
+    <TextView
+        android:id="@+id/tev_m1_Qt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Q弹"
+        app:layout_constraintBottom_toTopOf="@+id/tev_m1_power"
+        app:layout_constraintEnd_toEndOf="@+id/menuview"
+        app:layout_constraintStart_toStartOf="@+id/menuview"
+        app:layout_constraintTop_toTopOf="@+id/menuview" />
+
+    <TextView
+        android:id="@+id/tev_m1_dr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="导入"
+        app:layout_constraintBottom_toBottomOf="@+id/menuview"
+        app:layout_constraintEnd_toStartOf="@+id/tev_m1_power"
+        app:layout_constraintStart_toStartOf="@+id/menuview"
+        app:layout_constraintTop_toTopOf="@+id/tev_m1_power" />
+
+    <TextView
+        android:id="@+id/tev_m1_dc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="导出"
+        app:layout_constraintBottom_toBottomOf="@+id/menuview"
+        app:layout_constraintEnd_toEndOf="@+id/menuview"
+        app:layout_constraintStart_toEndOf="@+id/tev_m1_power"
+        app:layout_constraintTop_toTopOf="@+id/tev_m1_power" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关机倒计时"
+        app:layout_constraintBottom_toTopOf="@+id/tev_m1_time"
+        app:layout_constraintEnd_toEndOf="@+id/countdownview"
+        app:layout_constraintStart_toStartOf="@+id/countdownview" />
+
+    <TextView
+        android:id="@+id/tev_m1_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/countdownview"
+        app:layout_constraintEnd_toEndOf="@+id/countdownview"
+        app:layout_constraintStart_toStartOf="@+id/countdownview" />
+
+    <ImageView
+        android:id="@+id/tev_logo"
+        android:layout_width="72dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
